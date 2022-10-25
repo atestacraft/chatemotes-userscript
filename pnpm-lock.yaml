@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@crashmax/prettier-config': ^2.0.4
   '@crashmax/tsconfig': ^1.0.2
+  '@zero-dependency/dom': ^0.7.1
   redom-jsx: ^3.29.4
   sass: ^1.55.0
   typescript: ^4.8.4
@@ -11,6 +12,7 @@ specifiers:
   vite-userscript-plugin: ^1.6.1
 
 dependencies:
+  '@zero-dependency/dom': 0.7.1
   redom-jsx: 3.29.4
 
 devDependencies:
@@ -55,14 +57,14 @@ packages:
     dependencies:
       '@ampproject/remapping': 2.2.0
       '@babel/code-frame': 7.18.6
-      '@babel/generator': 7.17.7
+      '@babel/generator': 7.19.6
       '@babel/helper-compilation-targets': 7.19.3_@babel+core@7.17.8
       '@babel/helper-module-transforms': 7.19.6
       '@babel/helpers': 7.19.4
-      '@babel/parser': 7.18.9
+      '@babel/parser': 7.19.6
       '@babel/template': 7.18.10
-      '@babel/traverse': 7.17.3
-      '@babel/types': 7.17.0
+      '@babel/traverse': 7.19.6
+      '@babel/types': 7.19.4
       convert-source-map: 1.9.0
       debug: 4.3.4
       gensync: 1.0.0-beta.2
@@ -99,7 +101,7 @@ packages:
     resolution: {integrity: sha512-oLcVCTeIFadUoArDTwpluncplrYBmTCCZZgXCbgNGvOBBiSDDK3eWO4b/+eOTli5tKv1lg+a5/NAXg+nTcei1w==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.17.0
+      '@babel/types': 7.19.4
       jsesc: 2.5.2
       source-map: 0.5.7
     dev: true
@@ -289,7 +291,7 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      '@babel/types': 7.17.0
+      '@babel/types': 7.19.4
     dev: true
 
   /@babel/parser/7.19.1:
@@ -332,13 +334,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.18.6
-      '@babel/generator': 7.17.7
+      '@babel/generator': 7.19.6
       '@babel/helper-environment-visitor': 7.18.9
       '@babel/helper-function-name': 7.19.0
       '@babel/helper-hoist-variables': 7.18.6
       '@babel/helper-split-export-declaration': 7.18.6
-      '@babel/parser': 7.18.9
-      '@babel/types': 7.17.0
+      '@babel/parser': 7.19.6
+      '@babel/types': 7.19.4
       debug: 4.3.4
       globals: 11.12.0
     transitivePeerDependencies:
@@ -501,7 +503,7 @@ packages:
   /@vue/compiler-core/3.2.41:
     resolution: {integrity: sha512-oA4mH6SA78DT+96/nsi4p9DX97PHcNROxs51lYk7gb9Z4BPKQ3Mh+BLn6CQZBw857Iuhu28BfMSRHAlPvD4vlw==}
     dependencies:
-      '@babel/parser': 7.18.9
+      '@babel/parser': 7.19.6
       '@vue/shared': 3.2.41
       estree-walker: 2.0.2
       source-map: 0.6.1
@@ -517,7 +519,7 @@ packages:
   /@vue/compiler-sfc/3.2.41:
     resolution: {integrity: sha512-+1P2m5kxOeaxVmJNXnBskAn3BenbTmbxBxWOtBq3mQTCokIreuMULFantBUclP0+KnzNCMOvcnKinqQZmiOF8w==}
     dependencies:
-      '@babel/parser': 7.18.9
+      '@babel/parser': 7.19.6
       '@vue/compiler-core': 3.2.41
       '@vue/compiler-dom': 3.2.41
       '@vue/compiler-ssr': 3.2.41
@@ -539,7 +541,7 @@ packages:
   /@vue/reactivity-transform/3.2.41:
     resolution: {integrity: sha512-mK5+BNMsL4hHi+IR3Ft/ho6Za+L3FA5j8WvreJ7XzHrqkPq8jtF/SMo7tuc9gHjLDwKZX1nP1JQOKo9IEAn54A==}
     dependencies:
-      '@babel/parser': 7.18.9
+      '@babel/parser': 7.19.6
       '@vue/compiler-core': 3.2.41
       '@vue/shared': 3.2.41
       estree-walker: 2.0.2
@@ -549,6 +551,10 @@ packages:
   /@vue/shared/3.2.41:
     resolution: {integrity: sha512-W9mfWLHmJhkfAmV+7gDjcHeAWALQtgGT3JErxULl0oz6R6+3ug91I7IErs93eCFhPCZPHBs4QJS7YWEV7A3sxw==}
     dev: true
+
+  /@zero-dependency/dom/0.7.1:
+    resolution: {integrity: sha512-mCdOBcw3WPyB1usu31dmTJgJg3bgDt+Oib0iyXQU4FbuOnJFXivzt1pmQOf7V/UVo7J7q2KvfScygSY8q5qO9Q==}
+    dev: false
 
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}

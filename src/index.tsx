@@ -1,21 +1,26 @@
-import { mount } from 'redom-jsx'
-import './style.scss'
+import { domReady } from '@zero-dependency/dom'
+import { addEmote, allEmotes } from './api.js'
+import { BetterTTV, FrankerFaceZ, SevenTV } from './providers/index.js'
 
-function App() {
-  return (
-    <div className="card">
-      <h1 className="title">Hello World</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, ipsa.
-      </p>
-      <a
-        href="https://google.com"
-        target="_blank"
-      >
-        Link
-      </a>
-    </div>
-  )
+async function loadProvider() {
+  if (import.meta.env.DEV) {
+    GM_setValue('API_TOKEN', 'xxx')
+  }
+
+  const emotes = await allEmotes()
+
+  switch (location.hostname) {
+    case '7tv.app':
+      console.log('7tv provider loaded')
+      break
+    case 'betterttv.com':
+      console.log('bttv provider loaded')
+      break
+    case 'www.frankerfacez.com':
+      console.log('ffz provider loaded')
+      FrankerFaceZ(emotes)
+      break
+  }
 }
 
-mount(document.body, <App />)
+domReady().then(() => loadProvider())
