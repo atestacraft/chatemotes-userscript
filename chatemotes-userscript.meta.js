@@ -6,7 +6,7 @@
 // @match       *://7tv.app/*
 // @match       *://betterttv.com/*
 // @match       *://www.frankerfacez.com/*
-// @grant       GM_addStyle
+// @grant       GM_getValue
 // @updateURL   https://atestacraft.github.io/chatemotes-userscript/chatemotes-userscript.meta.js
 // @downloadURL https://atestacraft.github.io/chatemotes-userscript/chatemotes-userscript.user.js
 // ==/UserScript==
