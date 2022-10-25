@@ -1,8 +1,8 @@
 {
-  "name": "vite-userscript-template",
+  "name": "chatemotes-userscript",
   "private": true,
-  "homepage": "https://crashmax-dev.github.io/vite-userscript-template/",
-  "version": "0.0.1",
+  "homepage": "https://atestacraft.github.io/chatemotes-userscript/",
+  "version": "0.0.0",
   "type": "module",
   "license": "MIT",
   "scripts": {

@@ -14,7 +14,11 @@ export default defineConfig((config) => {
           version,
           license,
           homepage,
-          match: 'https://example.com'
+          match: [
+            '*://7tv.app/*',
+            '*://betterttv.com/*',
+            '*://www.frankerfacez.com/*'
+          ]
         },
         server: {
           port: 3000
