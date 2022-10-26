@@ -1,6 +1,7 @@
 import { domReady } from '@zero-dependency/dom'
 import { addEmote, allEmotes } from './api.js'
 import { BetterTTV, FrankerFaceZ, SevenTV } from './providers/index.js'
+import './style.scss'
 
 async function loadProvider() {
   if (import.meta.env.DEV) {
@@ -17,8 +18,7 @@ async function loadProvider() {
       console.log('bttv provider loaded')
       break
     case 'www.frankerfacez.com':
-      console.log('ffz provider loaded')
-      FrankerFaceZ(emotes)
+      FrankerFaceZ.init(emotes)
       break
   }
 }

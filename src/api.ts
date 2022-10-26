@@ -1,8 +1,8 @@
 import { Fetcher } from '@zero-dependency/dom'
-import type { Emote } from './types'
+import { API_BASE } from './constants.js'
+import type { Emote } from './types.js'
 
-// https://vchcode-emotes.satont.dev/api/
-const fetcher = new Fetcher('http://localhost:5050/api/', {
+const fetcher = new Fetcher(API_BASE, {
   headers: {
     'Content-Type': 'application/json',
     Authorization: GM_getValue('API_TOKEN')
