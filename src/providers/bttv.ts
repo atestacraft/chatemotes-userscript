@@ -74,7 +74,7 @@ class BTTVButton {
       type: 'button',
       onclick: async () => {
         try {
-          this.button.setAttribute('disabled', true)
+          this.button.setAttribute('disabled', 'true')
 
           if (this.isAdded) {
             await deleteEmote(this.emoteName)

@@ -12,7 +12,7 @@ async function loadProvider() {
 
   switch (location.hostname) {
     case '7tv.app':
-      console.log('7tv provider loaded')
+      SevenTV.init(emotes)
       break
     case 'betterttv.com':
       BetterTTV.init(emotes)

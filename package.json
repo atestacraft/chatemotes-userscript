@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@zero-dependency/dom": "^0.7.2",
+    "@zero-dependency/utils": "^0.1.0",
     "redom-jsx": "^3.29.4"
   }
 }
