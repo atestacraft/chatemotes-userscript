@@ -6,3 +6,20 @@
 .selectable > td.ffz-added {
   background-color: #0ce3ac;
 }
+
+// bttv
+.bttv-add-button {
+  color: #a8dcfa !important;
+}
+
+.bttv-add-button:hover {
+  background: rgba(168, 220, 250, 0.12) !important;
+}
+
+.bttv-del-button {
+  color: #feb2b2 !important;
+}
+
+.bttv-del-button:hover {
+  background: rgba(254, 178, 178, 0.12) !important;
+}

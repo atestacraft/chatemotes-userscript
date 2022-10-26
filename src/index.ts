@@ -1,5 +1,5 @@
 import { domReady } from '@zero-dependency/dom'
-import { addEmote, allEmotes } from './api.js'
+import { allEmotes } from './api.js'
 import { BetterTTV, FrankerFaceZ, SevenTV } from './providers/index.js'
 import './style.scss'
 
@@ -15,7 +15,7 @@ async function loadProvider() {
       console.log('7tv provider loaded')
       break
     case 'betterttv.com':
-      console.log('bttv provider loaded')
+      BetterTTV.init(emotes)
       break
     case 'www.frankerfacez.com':
       FrankerFaceZ.init(emotes)

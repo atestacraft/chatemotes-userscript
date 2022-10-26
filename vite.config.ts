@@ -8,7 +8,7 @@ export default defineConfig((config) => {
     plugins: [
       Redom(),
       Userscript({
-        entry: 'src/index.tsx',
+        entry: 'src/index.ts',
         header: {
           name,
           version,
